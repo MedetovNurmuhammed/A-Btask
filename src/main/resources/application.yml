@@ -1,0 +1,23 @@
+spring:
+    application:
+        name: A-bTask
+
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        url: jdbc:postgresql://localhost:5431/postgres
+        username: postgres
+        password: 12345
+
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+
+server:
+    error:
+        include-stacktrace: always
+    port: 8989
+
+app:
+    jwt:
+        secret: Employees
